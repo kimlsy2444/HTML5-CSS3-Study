@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델-display(2)</title>
+    <style>
+        nav ul {
+            /*블릿 없애기*/
+            list-style-type: none;
+        }
+
+        nav ul li {
+            /*가로로 나열하기*/
+            display: inline;
+            margin: 50px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!--ul태그와 같이 사용되는 li태그는 블럭레벨요소 이다.-->
+        <ul>
+            <li><a href="#">C언어</a></li>
+            <li><a href="#">JAVA</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+        </ul>
+    </nav>
+</body></html>

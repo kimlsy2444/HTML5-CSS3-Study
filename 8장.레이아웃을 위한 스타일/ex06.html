@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>테두리스타일-2</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            border-color: gray;
+            border-style: dashed;
+            /*테두리 굵기*/
+            border-width: 5px;
+        }
+
+        .box1 {
+           /*border-color속성은 반드시 border-style 속성과 함께
+            사용되야한다 색상을 지정하지 않았다면 해당요소의 색상을 상속받는다.*/
+            border-color: red;
+        }
+
+        .box2 {
+            
+            border-color: blue;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+ 
+
+</body></html>

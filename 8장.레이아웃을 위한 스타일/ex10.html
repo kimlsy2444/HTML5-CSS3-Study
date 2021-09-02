@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>테두리스타일-라운딩(3)</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            border: 2px solid black;
+            background-color: #ffd800;
+        }
+        
+        /* 각 모서리 별로 라운딩 처리를 하고 싶다면 아래와 같이 지정하여 처리함*/
+        .round1{
+            /*상단 왼쪽에만 라운딩 처리*/
+            border-top-left-radius: 100px 50px;
+        }
+        .round2{
+            /*하단 오른쪽 에만 라운딩 상대적  처리*/
+            border-bottom-right-radius: 50% 30%;
+        }
+        .round3{
+            /* 왼쪽에만 라운딩 처리*/
+            border-top-right-radius:  50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="round1"></div>
+    <div class="round2"></div>
+    <div class="round3"></div>        
+</body>
+</html>

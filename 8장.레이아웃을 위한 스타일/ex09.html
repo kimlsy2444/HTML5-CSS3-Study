@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>테두리스타일-라운딩(2)</title>
+    <style>
+        div{
+            width: 250px;
+            height: 300px;
+            margin: 20px;
+            display: inline-block;
+            border: 2px solid;
+            /*네 방향을 아운딩 처리를 함*/
+            /*/를 하게 되면 동시에 한 모서리에 적용이 되는 것이고
+            띄우게 되면 시계방향으로 하나씩 적용이 된다.*/
+            border-radius: 70px/40px;
+            
+        }
+       
+        .bg{
+            background: url(images/image-1.png) no-repeat;
+            /*영역을 다 채운다.*/
+            background-size: cover;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div></div>   
+    <div class="round" id="bg"></div>     
+</body
+></html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델-display(1)</title>
+    <style>
+        div{
+            margin: 20px;
+            border: 1px solid  #ccc;
+            border-radius: 5px;
+        }
+        /*img 태그 자체가 인라인 요소이므로 display속성이 필요가 없다.*/
+        .inline img{
+            margin: 10px;  
+        }
+        /*  display: block값을 주니까 박스 
+        모델처럼 샇이고 있는 모습을 보이고 있다.*/
+        .block img{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="inline">
+        <img src="images/image-1.png">
+        <img src="images/image-2.png">
+        <img src="images/image-3.png">
+    </div>
+    
+    <div class="block">
+        <img src="images/image-1.png">
+        <img src="images/image-2.png">
+        <img src="images/image-3.png">
+    </div>
+    
+</body></html>

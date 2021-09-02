@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+    <style>
+        #box1 {
+            /*고정 넓이*/
+            width: 200px;
+            /*고정 높이*/
+            height: 100px;
+            /*배경색*/
+            background-color: #ff0017;
+        }
+
+        #box2 {
+            /*가변 넓이- 브라우저 창을 기준으로 하여 40%*/
+            width: 40%;
+            /*고정 높이*/
+            /*박스 모델에서 height속성은 컨텐츠 영역에 아무런 내용이 없다면
+            0%처리하게 된다.*/
+            height: 100px;
+            /*배경색*/
+            background-color: #0000ff;
+        }
+        
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 쉐도우</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            border: 2px solid;
+            border-radius: 20px
+        }
+
+        .box1 {
+            /* box-shadowd의 값 : 수평거리 ,수직거리 흐림정도,번짐정도*/
+            box-shadow: 2px -2px 5px 0px black;
+        }
+
+        .box2 {
+            /* box-shadowd의 값 : 수평거리 ,수직거리 흐림정도,번짐정도*/
+            box-shadow: 5px 5px 15px 5px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body></html>
