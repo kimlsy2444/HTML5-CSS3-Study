@@ -1,0 +1,124 @@
+
+body {
+    font-size: 14px;
+    font-family: "맑은 고딕", "고딕";
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #e7e7e7;
+}
+
+header {
+    position: relative;
+    height: 280px;
+    background-image: url(../images/pention_image.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+}
+
+header h1 {
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    font-size: 3em;
+    color: #FFC;
+    text-shadow: 1px 2px 2px #000;
+}
+
+header h2 {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 2em;
+    color: #FF0;
+    text-shadow: 0px 1px 1px #000;
+}
+
+.navi {
+    position: relative;
+    background-color: #271717;
+    margin-top: -15px;
+    width: 960px;
+    height: 60px;
+}
+
+.navi ul {
+    list-style-type: none;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navi ul li {
+    display: inline;
+    float: left;
+    font-size: 15px;
+}
+
+.navi a,
+navi a:visited {
+    padding: 10px 5px 5px 35px;
+    display: block;
+    color: #FFF;
+    width: 150px;
+    text-decoration: none;
+}
+
+.navi a:hover,
+.navi a:active .navi:focus {
+    text-shadow: 0px 2px 2px #000;
+    color: #FC0;
+}
+
+.content {
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 720px;
+
+    float: left;
+
+}
+
+.sidebar {
+    float: right;
+    width: 200px;
+    height: 550px;
+    background-color: #DFD;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar img {
+    width: 180px;
+    height: 120px;
+    margin-bottom: 5px;
+    border:  solid #ccc;
+    text-align: center;    
+}
+
+.sidebar img:hover {
+    border: 3px dotted red;
+}
+
+.banner {
+    margin: 0px 10px 15px 10px;
+    padding: 0px;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #fff;
+    text-align: center;
+    clear: both;
+}
+
+header,sction,footer,aside,article,figue {
+    display: block;
+}

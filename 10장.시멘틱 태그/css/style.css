@@ -1,0 +1,83 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+header {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #069;
+    padding: 10px;
+    /*overflow  내용이 요소에 들어갈 때 내용이 더 길때어떻게 보일지 선택하는 속성
+    visble : 기본값으로 내용이 더길어도 그대로 다 보인다.
+    hidden : 내용이 넘치면 자른다 자른 부분은 보이지 않는다.*/
+    overflow: hidden;
+}
+
+header nav{
+    width: 60%;
+    float: right;
+    
+}
+nav ul{
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline;
+    float: left;
+    margin: 15px;
+    
+}
+nav ul li a{
+   color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover,nav ul li a:focus,nav ul li a:visited{
+     border: 3px solid white;  
+}
+p{
+    font-size: 15px;
+}
+article{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #333;
+    padding: 5px;
+    overflow: hidden;
+}
+article section{
+   width:30%;
+    height: 650px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted #333;
+}
+
+section h3{
+    background: url(../images/bg-note.png) no-repeat left center;
+    padding-left: 30px;
+    
+}
+aside{
+    clear: both;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    background-color: #99cc33;
+}
+footer{
+    clear:both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
