@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>backface-visibility속성</title>
+    <style>
+        h1 {
+            font-size: 60px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            border: 1px solid black;
+            perspective: 300px;
+            margin-top: 50px;
+            margin-left: 100px;
+            float: left;
+        }
+
+        .box {
+            /*140도 회전*/
+            background-color: blue;
+            -webkit-transform: rotateY(140deg);
+            -ms-transform: rotateY(140deg);
+            -moz-transform: rotateY(140deg);
+            -o-transform: rotateY(140deg);
+            transform: rotateY(140deg);
+        }
+        
+        /*backface-visibility속성은 웹 요소가 y축을 기준으로 90초과가 되면
+        뒷면을 보여줄것인지 아니면 숨길것인지를 결정짓는 속성이다 
+        기본값은 visible이다.*/
+        #back1 {
+            color: aliceblue;
+            backface-visibility: hidden;
+        }
+
+        #back2 {
+            color: aliceblue;
+            backface-visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="back1">
+            <h1>뒷면</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="back2">
+            <h1>뒷면</h1>
+        </div>
+    </div>
+</body></html>

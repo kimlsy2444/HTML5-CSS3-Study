@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션-2</title>
+    <style>
+        .tr1:hover {
+            width: 200px;
+            height: 200px;
+            background-color: #ff6e5f;
+            transform: rotate(180deg);
+        }
+
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+
+            /*transition-property 트랜지션을 적용할 속성을 지정하는 것이다.
+            여기서는 너비와 높이가 속성으로 지정되었다.*/
+            -webkit-transition-property: background-color,
+                transform, width, height;
+            -ms-transition-property: background-color,
+                transform, width, height;
+            -moz-transition-property: background-color,
+                transform, width, height;
+            -o-transition-property: background-color, transform, width, height;
+            transition-property: background-color, transform, width, height;
+
+            /*transition-delay 트랜지션이 진행되는 시간을 지정하는 속성이다.*/
+            /*hover일 때 배경색 회전 너비 높이가 변하는데 시간을 지정한 것이다.*/
+            -webkit-transition-duration: 2s, 3s;
+            -ms-transition-duration:2s, 3s;
+            -moz-transition-duration:2s, 3s;
+            -o- transition-duration:2s, 3s;
+            transition-duration: 2s, 3s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tr1">
+        <h1>안녕!</h1>
+    </div>
+</body></html>

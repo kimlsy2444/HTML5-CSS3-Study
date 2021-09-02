@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>변형-2(scale함수)</title>
+    <style>
+        .origin {
+            width: 220px;
+            height: 320px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+
+        .scalex:hover {
+            /*scaleX()함수는 x축으로 주어진 값만큼 확대/축소한다.
+            단,1.0초과이면 확대하고 1.0미만이면 축소한다.*/
+            transform: scaleX(1.5);
+        }
+
+        .scaley:hover {
+           /*scaleY()함수는 y축으로 주어진 값만큼 확대/축소한다.
+            단,1.0초과이면 확대하고 1.0미만이면 축소한다.*/
+            transform: scaleY(1.5);
+        }
+
+        .scalexy:hover {
+           /*scale()함수는 x,y축으로 주어진 값만큼 확대/축소한다.
+            단x값,y값이 하나가 없다면 없는 값은 0으로 취급한다..*/
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        <div class="scalex">
+            <img src="images/grape.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="scaley">
+            <img src="images/grape.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="scalexy">
+            <img src="images/grape.png">
+        </div>
+    </div>
+</body></html>

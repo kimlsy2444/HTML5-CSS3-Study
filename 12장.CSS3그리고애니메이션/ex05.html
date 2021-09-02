@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>변형-5(skew함수)</title>
+    <style>
+        .origin {
+            width: 160px;
+            height: 240px;
+            border: 1px solid black;
+            float: left;
+            margin: 100px;
+
+        }
+
+        .skewx:hover {
+            /*skewX()는 각도만큼 x축으로 왜곡시키는 함수이다.*/
+
+            transform: skewX(30deg);
+        }
+
+        .skewy:hover {
+            /*skewX()는 각도만큼 y축으로 왜곡시키는 함수이다.*/
+
+            transform: skewY(30deg);
+        }
+
+        .skewxy:hover {
+            /*skew()는 x축으로 -25도,y축으로 -15 왜곡시켯다.*/
+            transform: skew(-25deg,-15deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="origin">
+        <div class="skewx">
+            <img src="images/rose.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="skewy">
+            <img src="images/rose.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="skewxy">
+            <img src="images/rose.jpg">
+        </div>
+    </div>
+
+
+</body></html>

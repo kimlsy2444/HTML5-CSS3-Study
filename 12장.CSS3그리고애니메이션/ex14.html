@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트렌지션-5</title>
+    <style>
+        .tr {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 3px solid black;
+
+            /*
+            transition-duration : 2s;
+            transition-timing-function: ease-in;
+            
+            transition-property: all;
+            transition-delay: 0s;*/
+
+            /*transition 관련된 속성을 한꺼번에 나타내고자 할때 사용하면 된다
+            단 완숙만 가능 글고 가독성도 별로임*/
+            -webkit-transition: 2s ease-in;
+            -ms-transition: 2s ease-in;
+            -moz-transition: 2s ease-in;
+            -o-transition: 2s ease-in;
+            transition: 2s ease-in;
+        }
+
+        .tr:hover {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tr"></div>
+</body></html>

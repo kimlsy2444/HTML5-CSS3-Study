@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>애니메이션-1</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            
+            -webkit-animation-name: change-bg;
+            -ms-animation-name: change-bg;
+            -moz-animation-name: change-bg;
+            -o-animation-name: change-bg;
+            /*change-bg이름으로 정의 애니메이션을 적용시키겠다.*/
+            animation-name: change-bg;
+            
+            -webkit-animation-duration: 3s;
+            -ms-animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+        
+        @-webkit-keyframes change-bg{
+            from{
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to{
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+        @-moz-keyframes change-bg{
+            from{
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to{
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+        @-o-keyframes change-bg{
+            from{
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to{
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+        @-ms-keyframes change-bg{
+            from{
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to{
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+        
+        
+        
+        
+        /*change-bg라는 애니메이션 이름으로 시작부터 끝까지의 내용을
+        정의를 해두었다.*/
+        @keyframes change-bg{
+            from{
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to{
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜스폼 다중적용</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: #0094ff;
+        }
+        .box{
+            -webkit-transition: 2s ease-in;
+            -ms-transition: 2s ease-in;
+            -moz-transition: 2s ease-in;
+            -o-transition: 2s ease-in;
+            transition: 2s ease-in;
+        }
+        .box:hover{
+           /* transform: rotateX(180deg);
+            perspective: 120px;
+            transform: scale(2);*/
+            
+            /*위에 있는 3가지의 속성을 한꺼번에 아래와 같이 표현할수 있다.
+            하지만 권장사항은 아니다.익숙해질 때까지는 속성 풀네임을 쓰도록
+            하자.*/
+            -webkit-transform:scale(2) perspective(120px) rotateX(180deg);
+            -ms-transform:scale(2) perspective(120px) rotateX(180deg);
+            -moz-transform:scale(2) perspective(120px) rotateX(180deg);
+            -o-transform:scale(2) perspective(120px) rotateX(180deg);
+            transform:scale(2) perspective(120px) rotateX(180deg);    
+        }        
+    </style>    
+</head>
+<body>
+    <div class="box">        
+    </div>
+</body>
+</html>

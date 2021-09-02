@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>변형-1(translat함수)</title>
+    <style>
+        .origin {
+            width: 400px;
+            height: 150px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+
+        .movex:hover {
+            /*translateX()함수는 x축으로 주어진 값만큼 이동한다.
+            단, 양수이면 우측이동 음수값이면 왼쪽 이동을 한다.*/
+            transform: translateX(50px);
+        }
+
+        .movey:hover {
+            /*translateY()함수는 Y축으로 주어진 값만큼 이동한다.
+            단, 양수이면 아래쪽이동 음수값이면 위쪽 이동을 한다.*/
+            transform: translateY(-50px);
+        }
+
+        .movexy:hover {
+            /*translate()함수는 x축 y축으로 주어진 값만큼 이동한다.
+            단, x값y값이 하나가 없다면 없는 값은 0으로 취급한다.*/
+            transform: translate(50px, 50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        <div class="movex">
+            <img src="images/car.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="movey">
+            <img src="images/car.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="movexy">
+            <img src="images/car.png">
+        </div>
+    </div>
+</body></html>

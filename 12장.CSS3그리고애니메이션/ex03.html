@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>변형-3(rotate 2차원 함수)</title>
+    <style>
+        .origin {
+            width: 220px;
+            height: 320px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        .rotate1:hover{
+             /*rotate()함수는 주어진 각도만큼 회전을한다
+            단.양수면 시계방향으로 회전을 하고 음수면 시계 반댕향으로 
+            회전을한다*/
+            transform: rotate(45deg);
+        }
+        
+        .rotate2:hover{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="origin">
+        <div class="rotate1">
+            <img src="images/grape.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotate2">
+            <img src="images/grape.png">
+        </div>
+    </div>
+</body>
+
+</html>

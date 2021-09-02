@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>변형-4(rotate 3차원 함수)</title>
+    <style>
+        .origin {
+            width: 220px;
+            height: 320px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+            /*perspective속성은 3차원 변형에서 사용하는 속성으로
+            원래 위치에서 사용자가 있는 방향이나 반대방향으로 잡아당기거나 밀어내는
+            원근감을 갖게 하는 속성이다.
+            속성의 값은 0 보다 커야되면 값이 클수록 사용자로부터 멀어진다.*/
+            perspective: 200px;
+        }
+
+        .rotatex:hover {
+            /*perspective : 200px만큼 원근감을 가지게 되고 아울러 x축으로
+            45도 회전이 된 모습을 띄게된다.*/
+            transform: rotateX(45deg);
+        }
+
+        .rotatey:hover {
+            /*perspective : 200px만큼 원근감을 가지게 되고 아울러 y축으로
+            45도 회전이 된 모습을 띄게된다.*/
+            transform: rotateY(45deg);
+        }
+
+        .rotatez:hover {
+            /*perspective : 200px만큼 원근감을 가지게 되고 아울러 rotate3d()
+            함수는 x축으로 2.5, y축으로1.2, z축으로 -1.5만큼의 방향 벡터로 
+            45도 회전이 된 모습을 띄게 된다.*/
+            transform: rotateZ(45deg);
+        }
+
+        .rotatexyz:hover {
+         
+            transform: rotate3d(2.5,1.2,-1.5,45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="origin">
+        <div class="rotatex">
+            <img src="images/grape.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatey">
+            <img src="images/grape.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatez">
+            <img src="images/grape.png">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatexyz">
+            <img src="images/grape.png">
+        </div>
+    </div>
+</body></html>

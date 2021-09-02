@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>transfrom-style속성</title>
+    <style>
+        div {
+            /*모든 div 태그의 크기는 동일하게 설정*/
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .container {
+            /*최고 상위 요소에서는 원근감을 300px을 주었다.*/
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-left: 100px;
+            float: left;
+            perspective: 300px;
+        }
+
+        .box1 {
+            /*box1클래스 선택자들의 그룹에는 배경생을 파랑색으로 하고
+            y축을 기준으로 45도 회전*/
+            background-color: blue;
+            -webkit-transform: rotateY(45deg);
+            -ms-transform: rotateY(45deg);
+            -moz-transform: rotateY(45deg);
+            -o-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+        }
+
+        .box2 {
+            /*box2클래스 선택자들의 그룹에는 배경색을 적생으로하고
+            시작점을 왼쪽 상단에서부터 시작하도록 하였으며 
+            x축을 기준으로 45도 회전*/
+            background-color: red;
+            -webkit-transform-origin: left top;
+            -ms-transform-origin: left top;
+            -moz-transform-origin: left top;
+            -o-transform-origin: left top;
+            transform-origin: left top;
+
+            -webkit-transform: rotateX(45deg);
+            -ms-transform: rotateX(45deg);
+            -moz-transform: rotateX(45deg);
+            -o-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+        }
+
+        #tr-style1 {
+            -webkit-transform-style: flat;
+            -ms-transform-style: flat;
+            -moz-transform-style: flat;
+            -o-transform-style: flat;
+            /*transform-style: flat 값은 하위요소를 평면으로 처리*/
+            transform-style: flat;
+        }
+
+        #tr-style2 {
+            -webkit-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            /*transform-style: preserve-3d 값은 하위요소들에 3D효과를 적용*/
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1" id="tr-style1">
+            <div class="box2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box1" id="tr-style2">
+            <div class="box2"></div>
+        </div>
+    </div>
+
+
+</body></html>

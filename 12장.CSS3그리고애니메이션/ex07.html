@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>perspective속성</title>
+    <style>
+        #no-pers,
+        #pers {
+            width: 304px;
+            height: 268px;
+            border: 1px solid blue;
+            margin: 50px;
+            float: left;
+        }
+        
+        .rotatex img{
+            transform: rotateX(50deg);
+        }
+        #pers{
+            /*perspective속성은 원근감을 주는 속성이며, 속성 값이 0보다 커야되며,
+            사용자가 있는 방향이나 반대 반향으로 잡아당기거나 밀어내서 원근감을 준다.
+            속성의 값이 클수록 사용자로 부터 멀어진다.*/
+            perspective: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>원본 이미지</h4>
+    <div>
+        <img src="images/evening.png" alt="">
+    </div>
+    
+    <div id="no-pers">
+        <div class="rotatex">
+            <img src="images/evening.png" alt="">
+        </div>
+    </div>
+
+    <div id="pers">
+        <div class="rotatex">
+            <img src="images/evening.png" alt="">
+        </div>
+    </div>
+
+</body></html>

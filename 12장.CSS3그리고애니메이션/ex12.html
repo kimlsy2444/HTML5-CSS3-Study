@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션-3</title>
+    <style>
+        #ex div {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 5px 10px;
+            padding: 5px;
+            color: white;
+            background-color: blue;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #ex:hover div {
+            height: 400px;
+        }
+        
+        /*ease값은 처음에는 천천히 시작하고 점점빨라지다가 마지막에는
+        천천히 끝난다 기본값이다.*/
+        #ex .ease {
+            -webkit-transition-duration: 3s;
+            -ms-transition-duration: 3s;
+            -moz-transition-duration: 3s;
+            -o-transition-duration: 3s;
+            transition-duration: 3s;
+
+            
+            -webkit-transition-timing-function: ease;
+            -ms-transition-timing-function: ease;
+            -moz-transition-timing-function: ease;
+            -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+        }
+        /*linear값은 처음부터 끝까지 똑같은 속도로 진행된다*/
+        #ex .linear {
+            -webkit-transition-duration: 3s;
+            -ms-transition-duration: 3s;
+            -moz-transition-duration: 3s;
+            -o-transition-duration: 3s;
+            transition-duration: 3s;
+
+            -webkit-transition-timing-function: linear;
+            -ms-transition-timing-function: linear;
+            -moz-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+
+        }
+        /*ease-in값은 시작부분만 느리게 한다.*/
+        #ex .ease-in {
+            -webkit-transition-duration: 3s;
+            -ms-transition-duration: 3s;
+            -moz-transition-duration: 3s;
+            -o-transition-duration: 3s;
+            transition-duration: 3s;
+
+            -webkit-transition-timing-function: ease-in;
+            -ms-transition-timing-function: ease-in;
+            -moz-transition-timing-function: ease-in;
+            -o-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+
+        }
+        /*ease-in값은  느리게 끝낸다.*/
+        #ex .ease-out {
+            -webkit-transition-duration: 3s;
+            -ms-transition-duration: 3s;
+            -moz-transition-duration: 3s;
+            -o-transition-duration: 3s;
+            transition-duration: 3s;
+
+            -webkit-transition-timing-function: ease-out;
+            -ms-transition-timing-function: ease-out;
+            -moz-transition-timing-function: ease-out;
+            -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+
+        }
+         /*ease-in-out값은 느리게 시작하고 느리게 끝난다..*/
+        #ex .ease-in-out {
+            -webkit-transition-duration: 3s;
+            -ms-transition-duration: 3s;
+            -moz-transition-duration: 3s;
+            -o-transition-duration: 3s;
+            transition-duration: 3s;
+
+            -webkit-transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ex">
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+    </div>
+</body></html>

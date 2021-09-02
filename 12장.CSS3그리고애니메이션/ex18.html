@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>애니메이션-3</title>
+    <style>
+        .box {
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            height: 60px;
+
+            -webkit-animation-name: moving;
+            -moz-animation-name: moving;
+            -ms-animation-name: moving;
+            -o-animation-name: moving;
+            animation-name: moving;
+            -webkit- animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -ms-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            animation-duration: 3s;
+
+            /* animation-direction: normal값은 애니메이션을 끝까지 실행하면
+            원래 있던 위치로 돌아간다. 기본값
+            animation-direction: alternate값은 애니메이션을 끝까지 실행하면
+            왔던 방향으로 되돌아가면서 애니메이션을 실행한다.*/
+            -webkit-animation-direction: normal;
+            -moz-animation-direction: normal;
+            -ms-animation-direction: normal;
+            -o-animation-direction: normal;
+            animation-direction: normal;
+
+            /*animation-iteration-count: infinite 무한반복*/
+
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -ms-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+         @-webkit-keyframes moving {
+            from {
+                width: 200px;
+                background-color: #faef7c;
+                
+               
+                
+                opacity: 0.5;
+                transform: scale(0.5) rotate(15deg);
+            }
+
+            to {
+                width: 400px;
+                background-color: #ff0000;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+
+
+        }
+
+        @-moz-keyframes moving {
+            from {
+                width: 200px;
+                background-color: #faef7c;
+               
+                opacity: 0.5;
+                transform: scale(0.5) rotate(15deg);
+            }
+
+            to {
+                width: 400px;
+                background-color: #ff0000;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+
+
+        }
+
+        @-ms-keyframes moving {
+            from {
+                width: 200px;
+                background-color: #faef7c;
+               
+                opacity: 0.5;
+                transform: scale(0.5) rotate(15deg);
+            }
+
+            to {
+                width: 400px;
+                background-color: #ff0000;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+
+
+        }
+
+        @-o-keyframes moving {
+            from {
+                width: 200px;
+                background-color: #faef7c;
+               
+                opacity: 0.5;
+                transform: scale(0.5) rotate(15deg);
+            }
+
+            to {
+                width: 400px;
+                background-color: #ff0000;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+
+
+        }
+
+
+        @keyframes moving {
+
+            from {
+               width: 200px;
+                background-color: #faef7c;
+
+                opacity: 0.5;
+                transform: scale(0.5) rotate(15deg);
+            }
+            
+            to {
+                width: 400px;
+                background-color: #ff0000;
+
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="box">
+        <h3>Animation</h3>
+    </div>
+</body></html>
