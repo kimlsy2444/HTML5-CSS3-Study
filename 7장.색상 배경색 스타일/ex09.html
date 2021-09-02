@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선형 그라데이션-1</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            border: 1px solid red;
+
+        }
+
+        .gradient {
+            /*CSS 3미지원 브라우져*/
+            background: blue;
+            /*-webkit- 웹키트 방식으로 사파리,크롬,엣지*/
+            background: -webkit-linear-gradient(left top, blue, white);
+            /*-moz- 게코 방식의 브라우저로 모질라, 파이어폭스*/
+            background: -moz-linear-gradient(left top, blue, white);
+            /*-o- 오페라 브라우저*/
+            background: -o-linear-gradient(left top, blue, white);
+            /*최신 모던 브라우저의 버전*/
+            background: linear-gradient(left top, blue, white);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient"></div>
+</body></html>

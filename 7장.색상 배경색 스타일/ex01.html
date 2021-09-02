@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹의 색상 표기법</title>
+    <style>
+        body{
+            /*background괸련 속성들은 하위요소에게 상속되지 않는다.*/
+            background-color: #222222;
+        }
+        #text1{
+          
+            color: rgb(255,255,255);
+              /*rgb() 사용 흰색 적용*/
+        }
+      #text2{
+            
+            color: rgba(255,255,255,0.6);
+            /*rgba() 사용 0.6투명도 적용*/
+        }
+      #text3{
+            
+            color: yellow;
+           /*색상명 사용 노란색 적용*/
+        }
+     
+        
+    </style>
+</head>
+
+<body>
+    <h1 id="text1">Hello World!</h1>
+    <h1 id="text2">Hello World!</h1>
+    <h1 id="text3">Hello World!</h1>
+  
+                
+</body>
+</html>

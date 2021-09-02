@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경색-2</title>
+    <style>
+        div {
+            
+            width: 300px;
+            padding: 40px;
+            border: 5px dotted red;
+            background-color: skyblue;
+            margin-bottom: 20px;
+        }
+        
+        .box1{
+            /*background-clip속성의 기본값은 border-box이다.*/
+            background-clip: border-box;
+        }
+        
+         .box2{
+           
+            background-clip: padding-box;
+             
+        }
+        
+        .box3{
+            /*content-box border,padding을 제외한content 의내용에만 적용된다.*/
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <p>자바언어는 C++언어의 객체지향개념의 내용을 그대로
+            계승을 하면서 좀더 메모리적으로 효율성을 극대화한 객체지향 언어이다.</p>
+    </div>
+
+    <div class="box2">
+        <p>자바언어는 C++언어의 객체지향개념의 내용을 그대로
+            계승을 하면서 좀더 메모리적으로 효율성을 극대화한 객체지향 언어이다.</p>
+    </div>
+
+    <div class="box3">
+        <p>자바언어는 C++언어의 객체지향개념의 내용을 그대로
+            계승을 하면서 좀더 메모리적으로 효율성을 극대화한 객체지향 언어이다.</p>
+    </div>
+</body></html>

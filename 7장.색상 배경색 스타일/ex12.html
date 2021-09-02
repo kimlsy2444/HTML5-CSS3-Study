@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>원형 그라데이션-1</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+            border: 1px solid gray;
+        }
+        /*타원형(ellipse)의 그라데이션이 적용된다.*/
+        .circle1{
+            background: red;
+            background: -webkit-radial-gradient(white, yellow, red);
+            background: -moz-radial-gradient(white, yellow, red);
+            background: -o-radial-gradient(white, yellow, red);
+            background: radial-gradient(white, yellow, red);
+        }
+         /*원형(circle)의 그라데이션이 적용된다.*/
+        .circle2{
+            background: red;
+            background: -webkit-radial-gradient(circle, white, yellow, red);
+            background: -moz-radial-gradient(circle, white, yellow, red);
+            background: -o-radial-gradient(circle, white, yellow, red);
+            background: radial-gradient(circle, white, yellow, red);
+        }
+    </style>
+</head>
+<body>
+   <div class="circle1"></div>
+   <div class="circle2"></div>    
+</body>
+</html>

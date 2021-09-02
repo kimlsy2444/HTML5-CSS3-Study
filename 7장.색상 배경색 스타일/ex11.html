@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>선형 그라데이션-3</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+           
+           
+
+        }
+
+        .gradient {
+            /*CSS 3미지원 브라우져*/
+            background: #06f;
+            
+            /*-webkit- 웹키트 방식으로 사파리,크롬,엣지*/
+            /*여기서 색상중지점은 30%가 된다.*/
+            background: -webkit-linear-gradient(top, #06f, white 30%,#06f);
+            /*-moz- 게코 방식의 브라우저로 모질라, 파이어폭스*/
+            background: -moz-linear-gradient(top, #06f, white 30%,#06f);
+            /*-o- 오페라 브라우저*/
+            background: -o-linear-gradient(top, #06f, white 30%,#06f);
+            /*최신 모던 브라우저의 버전*/
+            background: linear-gradient(top, #06f, white 30%,#06f);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient"></div>
+</body></html>
