@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>하위선택자</title>
+</head>
+<style>
+    /*컨테이너의 하위요소 중 ul태그 포함 ul의 하위태그 까지 아래의 
+    스타일을 적용시킨다.*/
+    #container ul li{
+        border: 1px dotted;
+        color:  blue
+    }    
+</style>
+<body>
+
+    <section id="container">
+        <header>
+            <h1>예약 방법 및 요금</h1>
+        </header>
+        <p>객실을 예약하려면?</p>
+        <ul>
+            <li> 예약방법
+                <ul>
+                    <li>직접 통화 : 000-0000-0000</li>
+                    <li>문자 메시지 : 000-0000-0000</li>
+                </ul>
+            </li>
+            
+            <li> 상세 요금
+                <ul>
+                    <li>1인실:40,000</li>
+                    <li>2인실:60,000</li>
+                    <li>3인실:80,000</li>
+                    <li>4인실:100,000</li>
+                </ul>
+
+            </li>
+        </ul>
+    </section>
+
+
+</body></html>
+
+
+<!--후손 선택자, 자손 선택자 -> 하위 선택자로 통일을 하도록 한다.-->
+<!--section p {color : blue;} -->

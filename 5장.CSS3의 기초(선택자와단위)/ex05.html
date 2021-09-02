@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-5(id선택자)</title>
+    <style>
+        /*id 선택자에게 css를 적용시키고자 한다면 
+        #아이디값 : 값 형태로 지정해야한다.*/
+
+        #header {
+            width: 800px;
+            padding: 0;
+            /*안쪽 여백0*/
+            background: red;
+            /*배경색 red*/
+        }
+
+        #wrap {
+            width: 800px;
+            padding: 0;
+            /*안쪽 여백0*/
+            background: red;
+            /*배경색 red*/
+            overflow: hidden;
+            /*overflow  
+            visible: 기본값으로 내용이 더길어도 그대로 보이는값
+            hidden : 내용이 넘치면 자른다. 자른 부분은 보이지 않는다.
+            scroll : 내용과 상관없이 항상 스크롤바를 보이게 한다.
+            auto   : 내용이 짤릴때만 스크롤이 보이게끔한다.*/
+            
+        }
+
+        #aside {
+            color: white;
+            width: 300px;
+            float: left;
+            /*배치를 하는데 물결 흐르듯이 
+            왼쪽으로 붙여서 배치를한다.*/
+            padding: 0;
+            /*안쪽 여백0*/
+            background: blue;
+            /*배경색 blue*/
+
+        }
+
+        #content {
+            width: 500px;
+            float: left;
+            padding: 0;
+            /*안쪽 여백0*/
+            background: yellow;
+            /*배경색 blue*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--아래는 공간 분할을 하면서 id선택자4개를 부여하였다-->
+    <!--해당 id선택자는 항상 유니크하게 존재하는 특징을 가지고 있다.-->
+    <div id="header">
+        <h1>header영역</h1>
+    </div>
+
+    <div id="wrap">
+
+        <div id="aside">
+            <h1>aside 영역</h1>
+        </div>
+        <div id="content">
+            <h1>content 영역</h1>
+        </div>
+    </div>
+</body></html>

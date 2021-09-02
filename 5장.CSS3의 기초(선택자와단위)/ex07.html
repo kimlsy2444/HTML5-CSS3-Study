@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-7(class선택자)</title>
+</head>
+<style>
+    /*class 선택자는 다른 태그들도 함께 그룹을 지어서 스타일을 적용시키기
+    위해서 사용되면 편리한 점이 있다.*/
+    .choice {
+        color: blue;
+    }
+
+</style>
+
+<style>
+    .lang {
+        color: red;
+    }
+    
+    .item{
+        color: blueviolet
+    }
+    .header{
+        background-color:  aqua;
+    }
+</style>
+
+<body>
+   <!--멀티 선택자는 사용하지 않도록 한다 가독성 ㅆㅎㅌㅊ-->
+    <h1 class="item header">종류</h1>
+
+    <h2 class="choice">과일</h2>
+    <ul>
+        <li class="choice">사과</li>
+        <li>오렌지</li>
+        <li>파인애플</li>
+        <li class="choice">바나나</li>
+
+    </ul>
+
+
+    <h2 class="lang">플밍언어 종류</h2>
+    <ul>
+        <li class="lang">C언어</li>
+        <li class="lang">JAVA</li>
+        <li>HTML</li>
+        <li>CSS</li>
+
+    </ul>
+</body>
+
+</html>

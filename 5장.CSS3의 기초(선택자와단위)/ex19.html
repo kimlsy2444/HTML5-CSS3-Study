@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>형제 선택자</title>
+</head>
+<style>
+   
+    /* "~" 같은 형제 있으면서 같은 부모를 가지며
+    형제 요소에다가 범위를 지정을 하면 해당 범위내에 있는 형제 요소들은
+    전부 스타일이 적용된다.*/
+    h1 ~ ul {
+        color: blue;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <section id="container">
+
+        <h1>예약 방법 및 요금</h1>
+
+        <p>객실을 예약하려면?</p>
+
+        <ul>
+            <li>직접 통화 : 000-0000-0000</li>
+            <li>문자 메시지 : 000-0000-0000</li>
+        </ul>
+
+        <ul>
+            <ul>
+                <li>1인실:40,000</li>
+                <li>2인실:60,000</li>
+                <li>3인실:80,000</li>
+                <li>4인실:100,000</li>
+            </ul>
+
+        </ul>
+    </section>
+
+
+</body></html>

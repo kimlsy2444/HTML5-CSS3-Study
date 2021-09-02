@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-15(속성선택자-7)</title>
+</head>
+<style>
+    
+    ul {
+        list-style-type: circle;
+    }
+    
+    a {
+    
+        font-size: 16px;
+        color: blue;
+        text-decoration: none
+    }
+    /* "*=" w3라는 값이 포함이 되어있다면, 링크 텍스트에만 별도로 스타일을 적용시킨다. 
+        어디에 있든 값이 있다면 적용된다.*/
+    
+    [href *="w3"]{
+        background-color: blue;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <h2>HTML5 참고 사이트</h2>
+
+    <p>(아래 링크 중에 파란색 배경의 링크느 W3C사이트로 연결된다)</p>
+    
+    <ul>
+        <li><a href="http://www.w3c.org/TR/html">HTML 표준안 사이트</a></li>
+        <li><a href="http://www.webplatform.org">튜토리얼과 아티클</a></li>
+        <li><a href="http://www.caniuse.com">HTML 지원 여부 체크</a></li>
+    </ul>
+    
+</body>
+
+</html>
+
+
+
+<!-- 정리
+[속성] - 지정한 '속성'일때 스타일을 적용함.
+[속성=값] - '값'에 일치할때 스타일을 적용함.
+[속성~=값] - 여러값들 중에 값이 포함되어 있는데 정확하게 포함된 것에만 스타일을 적용함.
+[속성|=값] - 값이 포함되어 있을 때(하이픈 포함 단어도 된다.)만 스타일을 적용함.
+[속성^=값] - 값으로 시작할 때 스타일을 적용함.
+[속성$=값] - 값으로 끝날 때 스타일을 적용함.
+[속성*=값] - 값이 어디에 있든 포함만 되면 스타일을 적용함.
+-->
+

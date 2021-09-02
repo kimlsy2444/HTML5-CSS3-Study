@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>반응 선택자</title>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid white;
+        }
+
+        header {
+            height: 280px;
+            margin: 0;
+            background-image: url(images/header-bg.png);
+            background-position: left top;
+
+        }
+
+        .navi {
+            background: #031a41;
+            margin-top: -20px;
+            width: 960px;
+            height: 60px;
+
+        }
+
+        .navi ul {
+            list-style-type: none;
+            height: 40px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        .navi ul li {
+            display: inline;
+            float: left;
+        }
+        
+       /* link 라는 반응선택자는 방문을 하지 않은 링크에다가 스타일을 적용
+        visited라는 반응선택자는 방문한 링크에 스타일을 적용*/
+        .navi a:link, .navi a:visited {
+           padding: 10px 5px 5px 35px;
+            display: block;
+            color: #fff;
+            width: 150px;
+            text-decoration: none;  
+        }
+        /*hover라는 반응선택자는 마우스의 커서를 올려놓을 때의 스타일 적용*/
+        .navi a:hover {
+            text-decoration: 0px 2px 2px #000;
+            color: orange;
+        }
+        /*active반응 선택자는 마우스나 키보드를 클릭을 했을 때 스타일 적용*/
+        .navi a:active{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <nav class="navi">
+            <ul>
+                <li><a href="#"><b>이용 안내</b></a></li>
+                <li><a href="#"><b>이용 요금</b></a></li>
+                <li><a href="#"><b>객실 배경</b></a></li>
+                <li><a href="#"><b>객실 안내</b></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</body>
+
+</html>

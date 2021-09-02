@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-9(속성선택자-1)</title>
+    <style>
+        ul {
+            list-style-type: none;
+            /*블릿 없애기*/
+        }
+
+        li {
+            width: 110px;
+            display: inline;
+            /*블럭형태가 아니라 내비게이션 처럼 
+            옆으로 붙게끔한다*/
+            float: left;
+
+            margin: 0px;
+        }
+
+        a {
+            padding: 5px 20px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        /*아래 속성 선택자는 a태그에서 href라는 속성이 있는 곳만
+        배경색을 적용했다 속성을 지정할 때는 반드시 []안에 작성을 해야함.*/
+        a[href] {
+            background: yellow;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a>메인메뉴 : </a></li>
+        <li><a href="#">떡볶이 </a></li>
+        <li><a href="#">비빔밥 </a></li>
+        <li><a href="#">제육덮밥 </a></li>
+    </ul>
+</body></html>

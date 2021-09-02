@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-14(속성선택자-6)</title>
+</head>
+<style>
+    ul {
+        list-style-type: square;
+    }
+
+
+    a {
+        line-height: 30px;
+        /*블럭형태로 display되어있는 높이를 조절*/
+        font-size: 14px;
+        color: blue;
+        text-decoration: none
+    }
+
+
+    /*  
+        $= 선택자는 지정한 문자로 끝나는 요소의 스타일을 적용시킨다.*/
+    a[href $="hwp"] {
+
+        background: url(images/hwp_icon.gif) center right no-repeat;
+        padding-right: 25px;
+    }
+
+    a[href $="xls"] {
+        background: url(images/excel_icon.gif) no-repeat right center;
+        padding-right: 25px;
+    }
+</style>
+
+<body>
+
+    <h2>회사소개 파일 다운</h2>
+
+    <ul>
+
+        <li><a href="intro.hwp">hwp파일</a></li>
+        <li><a href="intro.xls">엑셀파일</a></li>
+    </ul>
+</body></html>

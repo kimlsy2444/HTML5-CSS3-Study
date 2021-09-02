@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-11(속성선택자-3)</title>
+
+    <style>
+        ul {
+            list-style: none;
+
+        }
+
+        li {
+            display: inline;
+            float: left;
+            margin: 10px;
+        }
+
+        a {
+            padding: 5px 20px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+
+
+
+        .flat {
+            background-color: blue;
+            color: white;
+        }
+
+        /*~ 틸드라 부른다 */
+        /*[속성~=값] 선택자를 사용하면 여러 속성 값 중에 해당 값이 포함되어 있는
+        요소들만 스타일을 적용 시킨다.*/
+        [class ~="button"]{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">메뉴 1</a></li>
+        <li><a href="#">메뉴 2</a></li>
+        <li><a href="#">떡볶이 </a></li>
+        <!--반드시 스타일을 적용 시키려면 클래스명이 동일해야한다.-->
+        <li><a href="#" class="button">비빔밥 </a></li>
+        <li><a href="#" class="flat button">제육덮밥 </a></li>
+    </ul>
+</body></html>

@@ -1,0 +1,19 @@
+/*외부 스타일 시트 정의*/ 
+img {
+     border: 2px solid yellow;
+ }
+
+ h1 {
+     width: 332px;
+     border-bottom-style: dotted;
+ }
+
+ ul {
+     color: blue;
+     /*목록의 글자색을 파란색*/
+     list-style-type: none;
+     /*블릿의 형태 없앰*/
+     list-style-type: square;
+     /*블릿의 형태 변경*/
+     /*padding: 0px; 안쪽 여백 없애기*/
+ }

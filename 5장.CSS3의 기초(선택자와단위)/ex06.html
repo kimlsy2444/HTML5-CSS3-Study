@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-6(id선택자의 중복)</title>
+    <style>
+        #selector{
+            color: blue;
+        }
+    </style>
+</head>
+
+
+<body>
+   <!--id 선택자는 유니크하다 아래와 같이 동일안 id사용을하면
+   결과는 브라우저에 따라 달라지겠지만 아래와 같은 방법은 쓰지 않는다.-->
+    <h1 id="selector"> ID 선택자-1</h1>
+    <h1 id="selector"> ID 선택자-2</h1>
+    <h1 id="selector">ID 선택자-3</h1>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS기초-9(속성선택자-2)</title>
+
+    <style>
+        /*아래 내용은 a태그 중에서도 속성이 target인데, 속성값이 ="_blank"
+        인것만 이미지를 적용한다.*/
+        a[target="_blank"] {
+            padding-right: 30px;
+            background: url(images/newwindow.png) no-repeat center right;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>포털 사이트 종류</h1>
+    <ul>
+        <li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+        <li><a href="http://www.goole.com">구글</a></li>
+        <li><a href="http://www.daum.net/">다음</a></li>
+
+    </ul>
+</body></html>

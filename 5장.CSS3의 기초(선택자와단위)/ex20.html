@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>테이블에서 하위선택자 사용 방법</title>
+    <style>
+        /* table 에서는 하위선택자를 사용하고자 할때 > 사용하면 적용이 인된다.*/
+        /*아래와 같이 적용을해야 스타일이 적용된다.*/
+        table tr th {
+            background-color: blue;
+            color: white;
+        }
+        
+        /*테이블 태그에는 thead, tbody 자동으로 추가를 해주기 때문에 스타일이
+        적용이 되지 않는다.*/
+        
+          table tr td {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>지역</th>
+        </tr>
+
+        <tr>
+            <td>홍길동</td>
+            <td>48</td>
+            <td>광주광역시</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

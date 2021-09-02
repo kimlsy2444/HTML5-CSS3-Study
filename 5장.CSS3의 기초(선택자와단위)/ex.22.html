@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자-1</title>
+    <style>
+        body {
+            background-color: #d5c9f0;
+        }
+
+        form fieldset {
+            margin-bottom: 25px;
+        }
+
+        form fieldset legend {
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        /*마우스가 input태그 위에 있을때*/
+        input:hover {
+            background: #fbc;
+            border: 1px #3181f7 solid;
+        }
+
+        /*checked속성은 라디오 버튼 체크박스 버튼을 체크했을때 아래 스타일이 적용됨*/
+        input:checked+span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+
+            <label for="name">이름 : <input type="text" disabled></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>신청과목 정보</legend>
+            <p>이 달에 신청할 과목을 선택하세요.</p>
+            <label><input type="radio" name="subject" value="speaking"><span>회화</span></label>
+            <label><input type="radio" name="subject" value="grammar">
+                <span>문법</span></label>
+            <label><input type="radio" name="subject" value="writing">
+                <span>작문</span></label>
+        </fieldset>
+    </form>
+</body></html>
