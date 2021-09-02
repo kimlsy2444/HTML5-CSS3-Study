@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>video태그</title>
+    <style>
+        body {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+   <!-- <video controls width="600px" height="500px">
+        <source src="media/beach.mp4" type="video/mp4">
+        <source src="media/beach.webm" type="video/webm">
+        이 영상을 보기 위해서는 HTML5를 지원하는 브라우저가 필요합니다.
+    </video>-->
+    
+    <!-- poster속성은 브라우저 문제나 혹은 인터넷 연결문제 들으로 인하여
+    비디오를 재생할 수 없을 경우, 비디오 화면 자리에 
+    대신 표식을 하는 이미지를 보여주는 속성이다 브라우저를 통해서 미디어가 재생이 되기전
+    표식이 되었다가 사용자가 동영상을 재생할때 동영상이 재생되면서 이미지는 사라진다. -->
+    <video src="media/beach.mp4" controls poster="images/bg_image.png"
+    width="400px" height="250px"></video>
+</body>
+
+</html>

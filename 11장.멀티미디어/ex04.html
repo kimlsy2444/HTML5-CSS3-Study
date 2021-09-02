@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>동영상 대문 만들기</title>
+    <style>
+        #container {
+            position: relative;
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3.5em;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            cursor: pointer;
+
+        }
+
+        #bg {
+            position: fixed;
+            /*기본적 패딩 마진 강제로 없애기 위해 설정*/
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            /*배경 동영상을 화면에 꽉차게 하기 위해서 설정*/
+            min-width: 100%;
+            min-height: 100%;
+            /*z-index 값을 -로 가져가면서 맨아래 배치하도록 한다.*/
+            z-index: -100;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+   <!--동영상 배경은 용량을 작게 반복하고 소리를꺼 방문자를 놀라지 않게한다.-->
+    <video id="bg" src="media/beach.mp4" muted autoplay loop></video>
+    <div id="container">
+        <h2>시원한 바닷가로 여행을 오세요</h2>
+        <h1><a href="https://www.yanolja.com/pension">바닷가 펜션</a></h1>
+    </div>
+</body></html>
