@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가변 폰트-2</title>
+    <style>
+        body{
+            font-size: 16px;
+        }
+        .wrapper{
+            width: 96%;
+            margin: 0 auto;
+            /*상위요소 에서 font-size12px로 주었다.*/
+            font-size: 12px;
+        }
+        .header-text{
+            font-size: 2rem; /*32px*/
+            text-align: center;
+        }
+        .text{
+            /*24px이 나온다 그이유는 rem단위는 root 즉 body태그를 처음부터
+            기본크기를 지정하기 때문에 중간에 기본값이 바뀌지 않는다.*/
+            font-size: 1.5rem;
+        }        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-text">
+            <p>rem단위를 제대로 알아봅니다.</p>
+            <p class="text">rem단위의 특성</p>
+        </header>
+    </div>
+</body>
+</html>

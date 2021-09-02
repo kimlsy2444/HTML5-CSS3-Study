@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title>가변그리드 레이아웃</title>
+    <style>
+        /*div부분*/
+        #wrapper {
+            width: 96%;
+            margin: 0 auto;
+        }
+
+        /*헤더*/
+        header {
+            /*상위 요소가 96%이지만 96%와 동일하게 가져 가고 싶다면
+            100%로 설정해야함*/
+            width: 100%;
+            height: 120px;
+            background-color: #066cfa;
+            border-bottom: 2px solid black;
+        }
+
+        /*h1태그*/
+        .header-text {
+            font-size: 32px;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+        }
+
+        /*각 요소의 너비를 구하는 공식(오지게 중요)
+        (요소의 너비/ 컨텐츠 전체를 감싸는 요소의 너비) *100 */
+        /*본문내용*/
+        .content {
+            float: left;
+            width: 62.5%;
+            height: 400px;
+            /*소수점은 3자리나 4자리로 표시*/
+            padding: 1.5625%;
+            background-color: #00ff90;
+        }
+
+        /*사이드바*/
+        .right-side {
+            float: right;
+            width: 31.25%;
+            height: 400px;
+            padding: 1.5625%;
+            background-color: #00ff90
+        }
+
+        footer {
+            /*float 속성해제*/
+            clear: both;
+            width: 100%;
+            height: 120px;
+            background-color: #c35;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="wrapper">
+
+        <header>
+            <h1 class="header-text">가변그리드 레이아웃</h1>
+        </header>
+
+        <section class="content">
+            <h4>여기는 본문입니다.</h4>
+        </section>
+
+        <aside class="right-side">
+            <h4>사이드바</h4>
+        </aside>
+
+        <footer>
+            <h4>푸터</h4>
+        </footer>
+
+    </div>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>고정그리드 레이아웃</title>
+    <style>
+        /*div부분*/
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        /*헤더*/
+        header {
+            width: 960px;
+            height: 120px;
+            background-color: #066cfa;
+            border-bottom: 2px solid black;
+        }
+
+        /*h1태그*/
+        .header-text {
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+        }
+
+        /*q본문내용*/
+        .content {
+            float: left;
+            width: 600px;
+            height: 400px;
+            padding: 15px;
+            background-color: #00ff90;
+        }
+
+        /*사이드바*/
+        .right-side {
+            float: right;
+            width: 300px;
+            height: 400px;
+            padding: 15px;
+            background-color: #00ff90;
+
+
+
+        }
+
+        footer {
+            /*float 속성해제*/
+            clear: both;
+            height: 120px;
+            background-color: #c35;
+        }
+    </style>
+</head>
+
+<body>
+    <!--고정 그리드 레이아웃은 단위가 px이기 때문에 브라우저 크기가 확대/축소
+   에 따라 글자 및 웹요소가 안보이는 경우가 있다.
+   고정 그리드 레이아웃은 어떠한 기기만 호환을 시키고자 할 때 사용하면 유리하다
+   레이아웃 잡기가 상당히 수월하다.-->
+    <div id="wrapper">
+
+        <header>
+            <h1 class="header-text">고정그리드 레이아웃</h1>
+        </header>
+
+        <section class="content">
+            <h4>여기는 본문입니다.</h4>
+        </section>
+
+        <aside class="right-side">
+            <h4>사이드바</h4>
+        </aside>
+
+        <footer>
+            <h4>푸터</h4>
+        </footer>
+
+    </div>
+</body></html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가변 폰트-1</title>
+    <style>
+        .wrapper{
+            width: 96%;
+            margin: 0 auto;
+            /*상위요소 에서 font-size12px로 주었다.*/
+            font-size: 12px;
+        }
+        .header-text{
+            font-size: 2em;
+            text-align: center;
+        }
+        .text{
+            font-size: 1.5em;
+        }
+        /*36px이 나온다. 그이유는 em단위는 상위요소가 기준이 되어 이때 상위요소인
+        .header-text-선택자의 부분의 크기가 24px이기 때문이다*/
+        /*이로인해 글자사이즈가 원하는데로 출력이 안됨으로 이것이 em단위의 단점이다
+        그것을 대체하기위해서 나온 단위가 rem이다.*/
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-text">
+            <p>em단위를 제대로 알아봅니다.</p>
+            <p class="text"> em단위의 특성</p>
+        </header>
+    </div>
+</body>
+</html>

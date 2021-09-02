@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가변이미지-3(picture태그, source태그, srcset속성)</title>
+</head>
+<body>
+   <!--picture태그는 HTML5.1부터 표준으로 포함되었다.
+   source태그와 함께 사용해서 화면 해상도뿐만 아니라 회면 너비에 따라서 다른 이미지 파일을 표시할 수 있다.-->
+    <picture>
+       <!--media속성은 srcset에 지정한 이미지를 표시하기 위한 조건을 나타낸다.-->
+       <!--pc-->
+        <source srcset="images/shop-large.jpg" media="(min-width:1024px)">
+        <!--태블릿-->
+        <source srcset="images/shop-medium.jpg" media="(min-width:768px)">
+        <!--모바일-->
+        <source srcset="images/shop-small.jpg" media="(min-width:320px)">
+        <img src="images/shop.jpg" style="width: 100%">
+    </picture>
+</body>
+</html>
