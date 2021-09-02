@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>폼태그</title>
+</head>
+
+<body>
+   <!--action 속성은 이동할 페이지를 지정하는것이며
+   get: url 창에 사용자가 입력한 내용을 다 보여준다.
+   보안에 취약
+   post: url 창에 사용자가 입력한 내용을 다 보여준다.
+   보안에 강함-->
+    <form action="#" method="post">
+
+        <!--사용자가 입력하는 입력 양식-->
+        <!--name은 페이지 이동할때 이동한 페이지에서 참조하는 값-->
+        아이디 : <input type="text" name="text" value="" /> <br />
+        비밀번호 : <input type="password" name="password" value="" /><br />
+
+        <!--radio 버튼은 오로지 1개만 선택할수 있도록 
+         name속성을 반드시 동일하게 가져가야한다-->
+        <!--value값은 이동한 페이지에서 참조하는 실제 값-->
+        성별 남<input type="radio" name="gender" value="man" />
+        여<input type="radio" name="gender" value="woman" /><br /><br />
+
+        <!--checkbox는 다중 선택이 가능한 입력양식이며 반드시 name이 동일해야한다
+        value값은 이동한 페이지에서 참조하는 실제 값-->
+        취미 독서 <input type="checkbox" name="hobby" value="reading" />
+        운동 <input type="checkbox" name="hobby" value="health" />
+        코딩 <input type="checkbox" name="hobby" value="coding" /><br />
+
+        <input type="file" name="file" /><br />
+
+        <!--사용자에게 보이지 않는 입력양식이며 통상 접속일시, 회원가입일시를
+        전달할 때 사용한다.-->
+        <input type="hidden" name="hodeden" value="12:10" /><br />
+        <input type="button" value="버튼" /><br />
+        <input type="reset" value="초기화" /><br />
+        <input type="submit" value="전송" /><br />
+        <input type="image"  src="imges/%EC%9D%B4%EC%B1%84%EC%98%81.jpg" width="150"/>
+
+    </form>
+
+
+
+</body></html>
