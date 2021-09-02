@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position요소-1(relative)</title>
+    <style>
+        .box1 {
+            float: left;
+            width: 100px;
+            background-color: #ffd800;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+        .box2 {
+
+            /*position: relative 값은 이전요소에 자연스럽게 연결해 배치를 하되
+            각 요소의 위치를 top,right,bottem,left 이용해서 배치할수 있다.*/
+            position: relative;
+            left: -70px;
+            top: 30px;
+            float: left;
+            width: 300px;
+            background-color: #0094ff;
+            padding: 20px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+
+</body>
+
+</html>

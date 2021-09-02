@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표 스타일-5</title>
+    <style>
+        body {
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            /*table-layout: fixed 값은 셀 너비를 고정시킨다.
+            셀의 너비는 달라지지 않는다*/
+            /*table-layout 속성이 없다면, 영어는 한줄로 셀 너비를 다차지
+            한글은 브라우저가 계산을 해서 나타낸다.*/
+            table-layout: fixed;
+            word-break: break-all;
+            height: auto;
+        }
+        
+
+        td {
+            width: 150px;
+            border: 1px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>가나다라마바사가나다라마바사가나다라마바사가나다라마바사</td>
+            <td>가나다라마바사가나다라마바사</td>
+        </tr>
+    </table>
+</body></html>

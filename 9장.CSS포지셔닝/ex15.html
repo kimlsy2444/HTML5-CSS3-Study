@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표 스타일-1</title>
+    <style>
+        body {
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+
+        .tbl {
+            border: 2px solid black;
+            /*collapse속성은 테두리를 하나로 합쳐서 표식하는 값*/
+            border-collapse: collapse;
+        }
+
+        .tbl td {
+            border: 2px dotted black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tbl">
+        <caption>LCK 경기 일정</caption>
+        <tr>
+            <td>SKT</td>
+            <td>SKT vs DWG</td>
+        </tr>
+        <tr>
+            <td>GEN</td>
+            <td>GEN vs BRO</td>
+        </tr>
+        <tr>
+            <td>DRX</td>
+            <td>DRX vs HLE</td>
+        </tr>
+    </table>
+</body></html>

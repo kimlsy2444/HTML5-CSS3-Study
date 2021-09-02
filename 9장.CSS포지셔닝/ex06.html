@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position요소-2(absolute)</title>
+    <style>
+        #wrap {
+            /* 상위요소의 포지션 속성이 relative값을 가지고 있다.*/
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        .box {
+            /* position: absolute 값은 상위요소가 반드시 relative속성을 가지고 있어야 하며, 위치를 지정하며 해당하는 위치에 
+            요소를 정확히 배치할 수가 있다.*/
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        #abs1 {
+            top: 0;
+            left:
+        }
+
+        #abs2 {
+            top: 0;
+            right: 0;
+        }
+
+        #abs3 {
+            bottom: 0;
+           left : 0;
+        }
+
+        #abs4 {
+            bottom: 0;
+            right: 0;
+        }
+        
+          #abs5 {
+            top: 250px;
+              left: 250px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="box" id="abs1"></div>
+        <div class="box" id="abs2"></div>
+        <div class="box" id="abs3"></div>
+        <div class="box" id="abs4"></div>
+        <div class="box" id="abs5"></div>
+    </div>
+</body></html>

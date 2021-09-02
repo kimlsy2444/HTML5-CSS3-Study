@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3단 구조 잡기</title>
+    <style>
+        /*모든 div태그에 회색 실선 테두리 적용*/
+        div {
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #container {
+            width: 960px;
+            padding: 20px;
+            /* margin auto 는 화면 중앙 표시*/
+            margin: 0 auto;
+        }
+
+        #header {
+            padding: 20px;
+            /*아래 요소들과의 간격을 유지*/
+            margin-bottom: 20px;
+        }
+
+        #contents {
+            width: 490px;
+            padding: 20px;
+            /*왼쪽 플로팅*/
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        #left-sidebar {
+            width: 150px;
+            padding: 20px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: #eee;
+        }
+        
+        #right-sidebar {
+          
+              width: 150px;
+            padding: 20px;
+            float: right;
+            margin-bottom: 20px;
+            background-color: #eee;
+        }
+
+        #footer {
+            /*양쪽 플로팅 해제*/
+           
+            clear: both;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>사이트 제목</h1>
+        </div>
+
+        <div id="left-sidebar">
+            <h2>사이드 바</h2>
+            <ul>
+                <li>항목 1</li>
+                <li>항목 2</li>
+                <li>항목 3</li>
+                <li>항목 4</li>
+                <li>항목 5</li>
+            </ul>
+        </div>
+        <div id="contents">
+            <h2> 본문 </h2>
+            <p> 법관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니하며, 징계처분에 의하지 아니하고는 정직·감봉 기타 불리한 처분을 받지 아니한다.</p>
+
+            <p>공무원의 신분과 정치적 중립성은 법률이 정하는 바에 의하여 보장된다. 공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나 대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.</p>
+
+            <p>국회의원은 그 지위를 남용하여 국가·공공단체 또는 기업체와의 계약이나 그 처분에 의하여 재산상의 권리·이익 또는 직위를 취득하거나 타인을 위하여 그 취득을 알선할 수 없다.</p>
+
+        </div>
+
+        <div id="right-sidebar">
+            <h2>사이드 바</h2>
+            <ul>
+                <li>항목 1</li>
+                <li>항목 2</li>
+                <li>항목 3</li>
+                <li>항목 4</li>
+                <li>항목 5</li>
+            </ul>
+        </div>
+        <div id="footer">
+            <h2>푸터</h2>
+            <p> 저작권 정보 </p>
+            <p> 연락처,이메일 </p>
+
+        </div>
+
+    </div>
+</body></html>

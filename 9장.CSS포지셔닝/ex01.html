@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>박스 사이징</title>
+    <style>
+        /* box-sizing: content-box 값이면 박스모델의 너비공식
+        박스모델의 너비 = (마진+테두리+패딩)*2+width값 
+        */
+        #box1 {
+            /*박스모델의 너비를 컨텐츠 영역으로 한정지음*/
+            box-sizing: content-box;
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+            padding: 30px;
+            border: 2px solid red;
+        }
+        /* box-sizing: border-box 값이면 박스모델의 너비공식
+        박스모델의 너비 = (마진*2)+width값 */
+        #box2 {
+            /*박스모델의 너비를 컨텐츠 영역으로 한정지음*/
+            box-sizing: border-box;
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+            padding: 30px;
+            border: 2px solid red;
+
+    </style>
+</head>
+
+<body>
+    <div id="box1">박스사이징(content-box)</div>
+    <div id="box2">박스사이징(border-box)</div>
+</body>
+
+</html>

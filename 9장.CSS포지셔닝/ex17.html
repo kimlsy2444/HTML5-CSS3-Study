@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표 스타일-3</title>
+    <style>
+        body {
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+
+        .schedule {
+            border-collapse: separate;
+            margin: 20px;
+
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #tb1 td {
+            /*empty-cells속성은 빈 셀을 보이거나 보이지않게 하는 속성이다.*/
+            empty-cells: show;
+        }
+
+        #tb2 td {
+            empty-cells: hide;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="schedule" id="tb1">
+        <caption>LCK 경기 일정</caption>
+        <tr>
+            <td>SKT</td>
+            <td>SKT vs DWG</td>
+            <td>TWICH 중계</td>
+        </tr>
+        <tr>
+            <td>GEN</td>
+            <td>GEN vs BRO</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>DRX</td>
+            <td>DRX vs HLE</td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <table class="schedule" id="tb2">
+        <caption>LCK 경기 일정</caption>
+        <tr>
+            <td>SKT</td>
+            <td>SKT vs DWG</td>
+            <td>TWICH 중계</td>
+        </tr>
+        <tr>
+            <td>GEN</td>
+            <td>GEN vs BRO</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>DRX</td>
+            <td>DRX vs HLE</td>
+            <td></td>
+        </tr>
+    </table>
+</body></html>

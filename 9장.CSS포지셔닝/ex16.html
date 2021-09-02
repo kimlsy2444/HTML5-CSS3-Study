@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표 스타일-2</title>
+    <style>
+        body {
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+
+        .tbl {
+            border: 2px solid black;
+            border-collapse: separate;
+            /*테이블의 셀들의 간격을 지정을 함*/
+            border-spacing: 20px 10px;
+        }
+
+        .tbl td {
+            border: 2px dotted black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tbl">
+        <caption>LCK 경기 일정</caption>
+        <tr>
+            <td>SKT</td>
+            <td>SKT vs DWG</td>
+        </tr>
+        <tr>
+            <td>GEN</td>
+            <td>GEN vs BRO</td>
+        </tr>
+        <tr>
+            <td>DRX</td>
+            <td>DRX vs HLE</td>
+        </tr>
+    </table>
+</body></html>
